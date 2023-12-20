@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\OneDrive - Indium Software India Private Limited\Invicara\Jenkins\PlatformConsoleAppAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 7 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.AppWorkspaceSelectTest" class="method navigator-link" hash-for-method="verifyApplicationProjectSelection">verifyApplicationProjectSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.AppWorkspaceSelectTest" class="method navigator-link" hash-for-method="verifyChangeAppProjectSelection">verifyChangeAppProjectSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.FileServicesRegression" class="method navigator-link" hash-for-method="verifyFileVersionHistoryandBreadcrumb">verifyFileVersionHistoryandBreadcrumb</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.FileServicesRegression" class="method navigator-link" hash-for-method="verifyHierarchyOfFoldersDisplayed">verifyHierarchyOfFoldersDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.ItemServiceRegression" class="method navigator-link" hash-for-method="verifyItemServicesTable">verifyItemServicesTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.UsergroupRegression" class="method navigator-link" hash-for-method="verifyUserGroupValidations">verifyUserGroupValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.WorkspaceRegression" class="method navigator-link" hash-for-method="verifyWorkspaceTableUiValidations">verifyWorkspaceTableUiValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.dt.test.AccountsDetailTest" class="method navigator-link" hash-for-method="verifyAccountsDetailPageAndLogout">verifyAccountsDetailPageAndLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.dt.test.AppWorkspaceSelectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApplicationProjectSelection">
+                  </a> <!-- verifyApplicationProjectSelection -->
+                  <span class="method-name">verifyApplicationProjectSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [digitaltwin | 2-4 Wilton Park] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.base.BaseClass.comparetwoText(BaseClass.java:761)
+	at com.qa.dt.page.ProjectSelection.verifyAppProjectSelection(ProjectSelection.java:92)
+	at com.qa.dt.test.AppWorkspaceSelectTest.verifyApplicationProjectSelection(AppWorkspaceSelectTest.java:34)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyChangeAppProjectSelection">
+                  </a> <!-- verifyChangeAppProjectSelection -->
+                  <span class="method-name">verifyChangeAppProjectSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [digitaltwin | 2-4 Wilton Park] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.base.BaseClass.comparetwoText(BaseClass.java:761)
+	at com.qa.dt.page.ProjectSelection.verifyAppProjectSelection(ProjectSelection.java:92)
+	at com.qa.dt.test.AppWorkspaceSelectTest.verifyChangeAppProjectSelection(AppWorkspaceSelectTest.java:56)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.dt.test.FileServicesRegression</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFileVersionHistoryandBreadcrumb">
+                  </a> <!-- verifyFileVersionHistoryandBreadcrumb -->
+                  <span class="method-name">verifyFileVersionHistoryandBreadcrumb</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.base.BaseClass.comparetwoText(BaseClass.java:761)
+	at com.qa.dt.page.ProjectSelection.verifyAppProjectSelection(ProjectSelection.java:92)
+	at com.qa.dt.page.ProjectSelection.selectApplicationAndWorkspace(ProjectSelection.java:111)
+	at com.qa.dt.test.FileServicesRegression.verifyFileVersionHistoryandBreadcrumb(FileServicesRegression.java:73)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHierarchyOfFoldersDisplayed">
+                  </a> <!-- verifyHierarchyOfFoldersDisplayed -->
+                  <span class="method-name">verifyHierarchyOfFoldersDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.base.BaseClass.comparetwoText(BaseClass.java:761)
+	at com.qa.dt.page.ProjectSelection.verifyAppProjectSelection(ProjectSelection.java:92)
+	at com.qa.dt.page.ProjectSelection.selectApplicationAndWorkspace(ProjectSelection.java:111)
+	at com.qa.dt.test.FileServicesRegression.verifyHierarchyOfFoldersDisplayed(FileServicesRegression.java:58)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.dt.test.ItemServiceRegression</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyItemServicesTable">
+                  </a> <!-- verifyItemServicesTable -->
+                  <span class="method-name">verifyItemServicesTable</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.base.BaseClass.comparetwoText(BaseClass.java:761)
+	at com.qa.dt.page.ProjectSelection.verifyAppProjectSelection(ProjectSelection.java:92)
+	at com.qa.dt.page.ProjectSelection.selectApplicationAndWorkspace(ProjectSelection.java:111)
+	at com.qa.dt.test.ItemServiceRegression.verifyItemServicesTable(ItemServiceRegression.java:56)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.dt.test.WorkspaceRegression</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWorkspaceTableUiValidations">
+                  </a> <!-- verifyWorkspaceTableUiValidations -->
+                  <span class="method-name">verifyWorkspaceTableUiValidations</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.qa.dt.base.BaseClass.failedStep(BaseClass.java:1096)
+	at com.qa.dt.page.CommonReusablesPage.verifyTableHeaders(CommonReusablesPage.java:223)
+	at com.qa.dt.test.WorkspaceRegression.verifyWorkspaceTableUiValidations(WorkspaceRegression.java:66)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.dt.test.UsergroupRegression</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserGroupValidations">
+                  </a> <!-- verifyUserGroupValidations -->
+                  <span class="method-name">verifyUserGroupValidations</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.qa.dt.base.BaseClass.failedStep(BaseClass.java:1096)
+	at com.qa.dt.page.CommonReusablesPage.verifyTableHeaders(CommonReusablesPage.java:223)
+	at com.qa.dt.test.UsergroupRegression.verifyUserGroupValidations(UsergroupRegression.java:68)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.dt.test.AccountsDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountsDetailPageAndLogout">
+                  </a> <!-- verifyAccountsDetailPageAndLogout -->
+                  <span class="method-name">verifyAccountsDetailPageAndLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\OneDrive - Indium Software India Private Limited\Invicara\Jenkins\PlatformConsoleAppAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.dt.util.ListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Console Application Regression Suite&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.dt.test.AccountsDetailTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.dt.test.AppWorkspaceSelectTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.dt.test.FileServicesRegression&quot;/&gt;
+      &lt;class name=&quot;com.qa.dt.test.ItemServiceRegression&quot;/&gt;
+      &lt;class name=&quot;com.qa.dt.test.UsergroupRegression&quot;/&gt;
+      &lt;class name=&quot;com.qa.dt.test.WorkspaceRegression&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Console Application Regression Suite --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Console Application Regression Suite (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyApplicationProjectSelection')
+data.setCell(0, 2, 'com.qa.dt.test.AppWorkspaceSelectTest')
+data.setCell(0, 3, 47419);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserGroupValidations')
+data.setCell(1, 2, 'com.qa.dt.test.UsergroupRegression')
+data.setCell(1, 3, 43065);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyWorkspaceTableUiValidations')
+data.setCell(2, 2, 'com.qa.dt.test.WorkspaceRegression')
+data.setCell(2, 3, 42795);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyItemServicesTable')
+data.setCell(3, 2, 'com.qa.dt.test.ItemServiceRegression')
+data.setCell(3, 3, 41634);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyFileVersionHistoryandBreadcrumb')
+data.setCell(4, 2, 'com.qa.dt.test.FileServicesRegression')
+data.setCell(4, 3, 41548);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyHierarchyOfFoldersDisplayed')
+data.setCell(5, 2, 'com.qa.dt.test.FileServicesRegression')
+data.setCell(5, 3, 41391);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAccountsDetailPageAndLogout')
+data.setCell(6, 2, 'com.qa.dt.test.AccountsDetailTest')
+data.setCell(6, 3, 34987);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyChangeAppProjectSelection')
+data.setCell(7, 2, 'com.qa.dt.test.AppWorkspaceSelectTest')
+data.setCell(7, 3, 23964);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.dt.test.AppWorkspaceSelectTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.dt.test.FileServicesRegression</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.dt.test.ItemServiceRegression</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.dt.test.UsergroupRegression</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.dt.test.WorkspaceRegression</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.AccountsDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.AppWorkspaceSelectTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyApplicationProjectSelection</span>
+                <span class="method-start">22646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">70400 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">74159 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyChangeAppProjectSelection</span>
+                <span class="method-start">93283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">117499 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.AccountsDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">122104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountsDetailPageAndLogout</span>
+                <span class="method-start">139328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">174316 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.FileServicesRegression</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">precondition</span>
+                <span class="method-start">179215 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">179924 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHierarchyOfFoldersDisplayed</span>
+                <span class="method-start">199765 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241484 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.ItemServiceRegression</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">precondition</span>
+                <span class="method-start">246501 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">246541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyItemServicesTable</span>
+                <span class="method-start">268052 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">309915 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.UsergroupRegression</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">precondition</span>
+                <span class="method-start">315048 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">315099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserGroupValidations</span>
+                <span class="method-start">336384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">379748 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.WorkspaceRegression</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">precondition</span>
+                <span class="method-start">383847 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">383876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWorkspaceTableUiValidations</span>
+                <span class="method-start">404589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">447686 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.FileServicesRegression</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTheApplication</span>
+                <span class="method-start">451566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyFileVersionHistoryandBreadcrumb</span>
+                <span class="method-start">471267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">513058 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.dt.test.AccountsDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">516404 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

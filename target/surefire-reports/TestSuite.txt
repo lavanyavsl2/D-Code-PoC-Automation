@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 522.504 s <<< FAILURE! - in TestSuite
+verifyApplicationProjectSelection(com.qa.dt.test.AppWorkspaceSelectTest)  Time elapsed: 47.584 s  <<< FAILURE!
+java.lang.AssertionError: expected [digitaltwin | 2-4 Wilton Park] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.test.AppWorkspaceSelectTest.verifyApplicationProjectSelection(AppWorkspaceSelectTest.java:34)
+
+verifyChangeAppProjectSelection(com.qa.dt.test.AppWorkspaceSelectTest)  Time elapsed: 24.099 s  <<< FAILURE!
+java.lang.AssertionError: expected [digitaltwin | 2-4 Wilton Park] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.test.AppWorkspaceSelectTest.verifyChangeAppProjectSelection(AppWorkspaceSelectTest.java:56)
+
+verifyHierarchyOfFoldersDisplayed(com.qa.dt.test.FileServicesRegression)  Time elapsed: 41.553 s  <<< FAILURE!
+java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.test.FileServicesRegression.verifyHierarchyOfFoldersDisplayed(FileServicesRegression.java:58)
+
+verifyItemServicesTable(com.qa.dt.test.ItemServiceRegression)  Time elapsed: 41.763 s  <<< FAILURE!
+java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.test.ItemServiceRegression.verifyItemServicesTable(ItemServiceRegression.java:56)
+
+verifyUserGroupValidations(com.qa.dt.test.UsergroupRegression)  Time elapsed: 43.198 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.qa.dt.test.UsergroupRegression.verifyUserGroupValidations(UsergroupRegression.java:68)
+
+verifyWorkspaceTableUiValidations(com.qa.dt.test.WorkspaceRegression)  Time elapsed: 42.915 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.qa.dt.test.WorkspaceRegression.verifyWorkspaceTableUiValidations(WorkspaceRegression.java:66)
+
+verifyFileVersionHistoryandBreadcrumb(com.qa.dt.test.FileServicesRegression)  Time elapsed: 41.67 s  <<< FAILURE!
+java.lang.AssertionError: expected [Application] but found [PlatformReferenceApp | cTest]
+	at com.qa.dt.test.FileServicesRegression.verifyFileVersionHistoryandBreadcrumb(FileServicesRegression.java:73)
+

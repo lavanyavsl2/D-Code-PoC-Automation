@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.dt.util.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Console Application Regression Suite(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.dt.test.AppWorkspaceSelectTest">
+        <methods>
+          <include name="verifyChangeAppProjectSelection"/>
+          <include name="loginTheApplication"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+          <include name="verifyApplicationProjectSelection"/>
+        </methods>
+      </class> <!-- com.qa.dt.test.AppWorkspaceSelectTest -->
+      <class name="com.qa.dt.test.FileServicesRegression">
+        <methods>
+          <include name="verifyFileVersionHistoryandBreadcrumb"/>
+          <include name="precondition"/>
+          <include name="loginTheApplication"/>
+          <include name="verifyHierarchyOfFoldersDisplayed"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.qa.dt.test.FileServicesRegression -->
+      <class name="com.qa.dt.test.ItemServiceRegression">
+        <methods>
+          <include name="verifyItemServicesTable"/>
+          <include name="precondition"/>
+          <include name="loginTheApplication"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.qa.dt.test.ItemServiceRegression -->
+      <class name="com.qa.dt.test.UsergroupRegression">
+        <methods>
+          <include name="verifyUserGroupValidations"/>
+          <include name="precondition"/>
+          <include name="loginTheApplication"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.qa.dt.test.UsergroupRegression -->
+      <class name="com.qa.dt.test.WorkspaceRegression">
+        <methods>
+          <include name="loginTheApplication"/>
+          <include name="precondition"/>
+          <include name="endReport"/>
+          <include name="verifyWorkspaceTableUiValidations"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.qa.dt.test.WorkspaceRegression -->
+    </classes>
+  </test> <!-- Console Application Regression Suite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

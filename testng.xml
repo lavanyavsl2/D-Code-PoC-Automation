@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.dt.util.ListenerClass" />
+	</listeners>
+	<test name="D-Code Application Regression Suite">
+		<classes>
+			<class name="com.qa.dt.test.AconexRegression" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
